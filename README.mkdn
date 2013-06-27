@@ -1,7 +1,7 @@
-Team Vanir's repo
+Team RapedApe's repo
 ===========
 
-This branch is for Vanir's android-4.2.2_r1 based ROM
+This branch is for RapedApe's android-4.2.2_r1 based ROM
 
 
 Getting Started
@@ -9,9 +9,9 @@ Getting Started
 
 Please see the [Android source page](http://source.android.com/source/index.html) for building instructions.
 
-To initialize your local repository using my trees, use the following command:
+To initialize your local repository using these trees, use the following command:
 
-    repo init -u git://github.com/VanirAOSP/platform_manifest.git -b jb42
+    repo init -u git://github.com/RapedApe/platform_manifest.git -b jb42
     
 To add a kernel (i.e TF700T)
 	Sync, open the manifest folder and look for your kernel.
@@ -22,11 +22,8 @@ Then to sync up:
 
     repo sync -j8
     
-Our gerrit:
 
-	http://vaniraosp.goo.im/#/q/status:open,n,z
-
-Vanir developer Resources:
+TEAM Vanir's developer Resources:
 
 [TUT] initializing the build environment
 
@@ -48,3 +45,6 @@ Vanir developer Resources:
 
 	http://pastebin.com/UFVH0M63
 
+This ROM is based on and is a slimmed down to personnal tastes version of VanirAosp Rom.
+all thanks and/or donations belong to the devs of Vanir and the other teams that did so much to add and create the features we all love.
+Thanx
