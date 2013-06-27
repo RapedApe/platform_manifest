@@ -7,6 +7,8 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com/"
           review="https://android-review.googlesource.com/" />
+  <remote name="RapedApe"
+          fetch="https://github.com/RapedApe/" />
   <remote name="aokp"
           fetch="git://github.com/"
           review="gerrit.sudoservers.com" />
@@ -23,8 +25,8 @@
           sync-c="true"
           remote="aosp" />
 
-  <project path="manifest" name="platform_manifest" remote="vanir" revision="jb42" />
-  <project path="build" name="platform_build" remote="vanir" revision="jb42">
+  <project path="manifest" name="platform_manifest" remote="RapedApe" revision="jb42" />
+  <project path="build" name="platform_build" remote="RapedApe" revision="jb42">
     <copyfile src="core/root.mk" dest="Makefile" />
     <copyfile src="tools/BUILD_COMMAND_README" dest="BUILD_COMMAND_README" />
   </project>
@@ -37,7 +39,7 @@
   <project path="dalvik" name="platform_dalvik" remote="vanir" revision="jb42" />
   <project path="development" name="platform_development" remote="vanir" revision="linaro_android_4.2.2" />
   <project path="device/asus/tf700t" name="android_device_asus_tf700t" remote="vanir" revision="cm-10.1" />
-  <project path="device/asus/grouper" name="platform_device_asus_grouper" remote="vanir" revision="jb42" />
+  <project path="device/asus/grouper" name="platform_device_asus_grouper" remote="RapedApe" revision="jb42" />
   <project path="device/asus/tilapia" name="device_asus_tilapia" groups="device" remote="vanir" revision="jb42" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />
@@ -60,16 +62,16 @@
   <project path="device/samsung/jfltevzw" name="android_device_samsung_jfltevzw" remote="vanir" revision="jb42" groups="device" />
   <project path="device/samsung/jfltexx" name="android_device_samsung_jfltexx" remote="vanir" revision="jb42" groups="device" />
   <project path="device/samsung/qcom-common" name="android_device_samsung_qcom-common" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/maguro" name="platform_device_samsung_maguro" remote="vanir" revision="jb42" groups="device" />
+  <project path="device/samsung/maguro" name="platform_device_samsung_maguro" remote="RapedApe" revision="jb42" groups="device" />
   <project path="device/samsung/manta" name="platform_device_samsung_manta" remote="vanir" revision="jb42" groups="device" />
   <project path="device/samsung/msm8960-common" name="android_device_samsung_msm8960-common" remote="vanir" revision="jb42" groups="device" />
   <project path="kernel/samsung/smdk4412" name="CyanogenMod/android_kernel_samsung_smdk4412" remote="cm" revision="cm-10.1" />
   <project path="device/samsung/smdk4412-common" name="CyanogenMod/android_device_samsung_smdk4412-common" remote="cm" revision="cm-10.1" groups="device" />
   <project path="device/samsung/smdk4412-qcom-common" name="device_samsung_smdk4412-qcom-common" remote="vanir" revision="jb42" groups="device" />
   <project path="device/samsung/t0lte" name="device_samsung_t0lte" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/toro" name="platform_device_samsung_toro" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="vanir" revision="jb42" groups="device" />
-  <project path="device/samsung/tuna" name="platform_device_samsung_tuna" remote="vanir" revision="jb42" groups="device" />
+  <project path="device/samsung/toro" name="platform_device_samsung_toro" remote="RapedApe" revision="jb42" groups="device" />
+  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="RapedApe" revision="jb42" groups="device" />
+  <project path="device/samsung/tuna" name="platform_device_samsung_tuna" remote="RapedApe" revision="jb42" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -243,7 +245,7 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="android_frameworks_av" remote="vanir" revision="jb421" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="vanir" revision="jb42" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="RapedApe" revision="jb42" />
   <project path="frameworks/compile/libbcc" name="platform_frameworks_compile_libbcc" remote="vanir" revision="linaro_android_4.2.2" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" />
@@ -391,10 +393,10 @@
   <project path="system/vold" name="platform_system_vold" remote="vanir" revision="jb42" />
   <project path="tools/build" name="platform/tools/build" groups="toolsbuild" />
   <project path="tools/motodev" name="platform/tools/motodev" />
-  <project path="vendor/asus" name="vendor_asus" remote="vanir" revision="jb42" groups="vendor" />
+  <project path="vendor/asus" name="vendor_asus" remote="RapedApe" revision="jb42" groups="vendor" />
   <project path="vendor/lge" name="vendor_lge" remote="vanir" revision="jb42" />
-  <project path="vendor/samsung" name="platform_vendor_samsung" remote="vanir" revision="jb42" groups="vendor" />
-  <project path="vendor/vanir" name="platform_vendor_vanir" remote="vanir" revision="jb42" groups="vendor" />
+  <project path="vendor/samsung" name="platform_vendor_samsung" remote="RapedApe" revision="jb42" groups="vendor" />
+  <project path="vendor/vanir" name="platform_vendor_vanir" remote="RapedApe" revision="jb42" groups="vendor" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" remote="cm" revision="cm-10.1" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-10.1" />
